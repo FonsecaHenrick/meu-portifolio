@@ -1,0 +1,200 @@
+@media screen and (max-width: 856px) {
+
+    header {
+        background-color: black;
+        height: 100px;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 100000;
+    }
+
+
+    nav.menu {
+        display: none;
+        width: 100%;
+    }
+
+    div.menu-mobile {
+        display: inline-block;
+    }
+
+
+    .logo {
+        display: inline-block;
+        margin-right: -4px;
+        vertical-align: top;
+        position: relative;
+        height: 100%;
+    }
+
+
+    article.txt-top,
+    article.img-top {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        padding: 0 8%;
+    }
+
+
+
+    .txt-top h1 {
+        color: #fff;
+        font-size: 3.5rem;
+        line-height: 50px;
+    }
+
+
+    .txt-top p {
+        font-size: 1rem;
+    }
+
+    article.img-top img {
+        border-radius: 80px;
+        width: 310px;
+
+    }
+
+    section.skills .titulo-sessao h2 {
+        font-size: 3.5rem;
+    }
+
+    .skills .titulo-sessao h2 span {
+        font-size: 3.5rem;
+    }
+
+    section.skills .skills-box {
+        width: 50%;
+        height: 360px;
+        margin-bottom: 30px;
+        padding: 40px 4%;
+    }
+
+
+    article.txt-projetos,
+    article.projetos-container {
+        display: block;
+        width: 100%;
+    }
+
+    article.txt-projetos {
+        position: static;
+        margin-bottom: 50px;
+    }
+
+    article.txt-projetos h2 {
+        font-size: 3.5rem;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    article.txt-projetos p {
+        text-align: center;
+    }
+
+    article.txt-projetos button {
+        margin-left: 70px;
+    }
+
+    article.txt-sobre {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about .img-sobre img {
+        display: none;
+    }
+
+    .txt-sobre {
+        color: white;
+    }
+
+    .txt-sobre h2 {
+        font-size: 5rem;
+        color: #fff;
+        line-height: 60px;
+    }
+
+    .txt-sobre h2 span {
+        display: block;
+        color: #f00;
+    }
+
+    article.txt-sobre p {
+        margin: 40px 0 20px 0;
+        font-size: 20px;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    article.txt-sobre button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        margin: 15px;
+    }
+
+      
+    section .contato {
+        padding: 80px 8%;
+    }
+
+    article.txt-contato, .form-contato {
+        padding: 20px;
+        display: block;
+        width: 100%;
+    }
+    
+    article.txt-contato {
+        color: #fff;
+        position: static;
+        top: 30%;
+        left: 0;
+        
+    }
+    
+    article.txt-contato h2 {
+        font-size: 3.5rem;
+        line-height: 60px;
+        
+    }
+    
+    .txt-contato h2 span {
+        color: #f00;
+        display: block;
+        
+    }
+    
+    .txt-contato p.p-contato{
+       margin: 20px 0;
+       font-size: 20px; 
+    }
+    
+    .txt-contato p.icon-contato {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    
+    .txt-contato p.icon-contato i {
+        font-size: 25px;
+        margin-right: 10px;
+    }
+
+    article form {
+        width: 325px;
+        color: #fff;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    footer .logo {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+}

@@ -1,0 +1,561 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #f00;
+}
+
+body {
+    background-color: #000000;
+}
+
+/* Geral */
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 2%;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* HEADER */
+header {
+    background-color: black;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+
+header.rolagem {
+    background-color: #3835356e;
+    padding: 15px 4%;
+    transition: 1s;
+    
+}
+
+.logo, .menu {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    position: relative;
+    height: 100%;
+}
+
+.logo a{
+    width: 20%;
+    max-width: 220px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: aliceblue;
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.logo a .h {
+    font-family: 'Clicker Script', cursive;
+    font-size: 35px;
+}
+
+.logo a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 4px solid red;
+    border-left: 4px solid red;
+    top: 0;
+    left: 0;
+    
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu ul {
+    list-style-type: none;
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+}
+
+.menu ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+
+}
+
+.menu ul li a:hover {
+    font-weight: bold;
+color: red;
+transition: all .4s;
+filter: drop-shadow(10px 5px 3px rgb(255, 255, 255));
+}
+
+.menu ul li a button {
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.menu ul li a button:hover {
+   border: 2px solid red;
+   color: red;
+   transition: all .4s;
+   font-weight: bold;
+   
+}
+
+.menu-mobile {
+    display: none;
+    width: 50%;
+    color: #fff;
+    margin-right: -4px;
+    text-align: right;
+    position: relative;
+    height: 100%;
+}
+
+.menu-mobile i {
+    position: absolute;
+    top: 50%;
+    right: -180px;
+    transform: translateY(-50%);
+    font-size: 30px;
+}
+
+
+/* top site*/
+
+section.top {
+  background-image: linear-gradient(45deg, #3f3e3d, #050505);  
+  padding: 80px 0;
+}
+
+.txt-top, .img-top {
+    display: inline-block;
+    margin-right: -4px;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.txt-top {
+    color: #fff;
+}
+
+.txt-top h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    line-height: 60px;
+}
+
+.txt-top h1 span {
+    display: block;
+    color: #f00;
+}
+
+.txt-top p {
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+.txt-top button {
+    background-color: red;
+    width: 240px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.txt-top button:hover {
+    color: red;
+    background-color: white;
+    font-weight: bold;
+    transition: all .8s;
+    filter: drop-shadow(10px 5px 3px #770a0a);
+}
+
+.img-top img {
+    border-radius: 80px;
+    
+}
+
+/* Sobre mim */
+
+section.about {
+    background-color: #646363;
+   padding: 80px 0; 
+}
+
+.img-sobre, .txt-sobre {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.about .img-sobre img {
+    width: 70%;
+    border-radius: 0 70px 30px 70px;
+    box-shadow: 10px 10px 5px #770a0a;
+}
+
+.txt-sobre {
+    color: white;
+}
+
+.txt-sobre h2 {
+    font-size: 5rem;
+    color: #fff;
+    line-height: 60px;
+}
+
+.txt-sobre h2 span {
+    display: block;
+    color: #f00;
+}
+
+.txt-sobre p {
+    margin: 40px 0 20px 0;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.txt-sobre button {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 0 20px 10px 20px;
+    border: solid red;
+    box-shadow: 5px 5px 5px #770a0a;
+    margin: 10px;
+}
+
+.txt-sobre button:hover {
+    background-color: #fff;
+    border: solid white;
+    color: red;
+    font-weight: bold;
+    transition: all .8s;
+    box-shadow: 5px 5px 5px red;
+    
+}
+
+/*Sessão habilidades */
+
+section.skills {
+    background-image: linear-gradient(45deg, #3f3e3d, #050505);
+    padding: 80px 0;
+}
+
+.skills .titulo-sessao {
+    text-align: center;
+}
+
+.skills .titulo-sessao h2{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+
+.skills .titulo-sessao h2 span {
+    color: red;
+}
+
+.skills-container {
+    width: 100%;
+    text-align: center;
+}
+
+.skills .skills-box {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    width: 30%;
+    margin-right: -4px;
+    margin: 0 1%;
+    text-align: center;
+    border: 2px solid rgba(7, 7, 7, 0.164);
+    padding: 80px 4%;
+    border-radius: 0 70px 30px 70px;
+    box-shadow: 10px 10px 5px #770a0a;
+   
+}
+
+.skills .skills-box:hover {
+    background-color: rgb(105, 105, 105);
+    transition: .8s;
+}
+
+.skills .skills-box img {
+    width: 60%;
+}
+
+.skills .skills-box h3 {
+    margin: 15px 0;
+    color: red
+}
+
+.skills .skills-box p {
+    font-size: 14px;
+}
+
+/* estilo projetos */
+
+section.meus-projetos {
+    padding: 100px 0;
+    background-color: #646363;
+}
+
+.txt-projetos, .projetos-container {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    width: 50%;
+}
+
+.txt-projetos {
+    position: sticky;
+    color: #fff;
+    top: 30%;
+    left: 0;
+    
+}
+
+.txt-projetos span {
+    color: red;
+    display: block;
+}
+
+.txt-projetos h2 {
+    font-size: 5rem;
+    line-height: 80px;
+}
+
+.txt-projetos p {
+    font-size: 20px;
+    margin: 30px 0 20px 0;
+}
+
+.txt-projetos button {
+    width: 250px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.txt-projetos button:hover {
+    color: red;
+    background-color: white;
+    font-weight: bold;
+    transition: all .8s;
+    filter: drop-shadow(10px 5px 3px #770a0a);
+}
+
+.projetos-container {
+    
+    color: #fff;
+    text-align: center;
+}
+
+.projetos-content {
+    margin-bottom: 50px;
+}
+
+.projetos-content h3 {
+    margin-top: 15px;
+}
+
+.projetos-box {
+    width: 320px;
+    height: 230px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 0 70px 30px 70px ;
+}
+
+.projetos-box img{
+    width: 320px;
+    height: 230px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 0 70px 30px 70px ;
+}
+
+.projetos-box img:hover {
+    filter: drop-shadow(10px 5px 3px #770a0a);
+    transition: .6s;
+}
+
+/* stilo fale comigo */
+
+section.contato {
+    padding: 100px 0;
+    background-image: linear-gradient(45deg, #3f3e3d, #050505);
+}
+
+.txt-contato, .form-contato {
+    display: inline-block;
+    margin-right: -4px;
+    vertical-align: top;
+    width: 50%;
+}
+
+.txt-contato {
+    color: #fff;
+    position: sticky;
+    top: 30%;
+    left: 0;
+    
+}
+
+.txt-contato h2 {
+    font-size: 4rem;
+    line-height: 60px;
+    
+}
+
+.txt-contato h2 span {
+    color: #f00;
+    display: block;
+    
+}
+
+.txt-contato p.p-contato{
+   margin: 20px 0;
+   font-size: 20px; 
+}
+
+.txt-contato p.icon-contato {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.txt-contato p.icon-contato i {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+form {
+    width: 60%;
+    color: #fff;
+}
+
+form label {
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    padding: 10px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid #fff;
+    height: 120px;
+    resize: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+form .btn-enviar {
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 150px;
+    cursor: pointer;
+}
+
+form .btn-enviar input:hover {
+    color: red;
+    background-color: white;
+    font-weight: bold;
+    transition: all .8s;
+    filter: drop-shadow(10px 5px 3px #770a0a);
+}
+
+/* ESTILO FOOTER*/
+
+footer {
+    padding: 100px 0;
+    background-color: #000000;
+}
+
+footer .linefooter-top {
+    padding-bottom: 20px;
+    border-bottom: solid 2px red;
+}
+
+footer .linefooter-bottom {
+    padding-top: 20px;
+}
+
+footer .linefooter-bottom button {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 0 20px 10px 20px;
+    border: solid red;
+    box-shadow: 5px 5px 5px #770a0a;
+    margin: 10px;
+}
+
+footer .linefooter-bottom button:hover {
+    background-color: #fff;
+    border: solid white;
+    color: red;
+    font-weight: bold;
+    transition: all .8s;
+    box-shadow: 5px 5px 5px red;
+    
+}
+
