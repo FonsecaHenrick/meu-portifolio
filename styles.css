@@ -246,7 +246,6 @@ section.about {
 .txt-sobre p {
     margin: 40px 0 20px 0;
     font-size: 20px;
-    text-align: justify;
     line-height: 30px;
 }
 
@@ -307,9 +306,10 @@ section.skills {
     margin: 0 1%;
     text-align: center;
     border: 2px solid rgba(7, 7, 7, 0.164);
-    padding: 80px 4%;
+    padding: 80px 5%;
     border-radius: 0 70px 30px 70px;
     box-shadow: 10px 10px 5px #770a0a;
+    margin-bottom: 30px;
    
 }
 
